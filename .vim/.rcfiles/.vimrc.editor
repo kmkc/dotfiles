@@ -1,0 +1,52 @@
+" vim editor settings
+
+" encoding priolity when reading file
+:set fileencodings=ucs-bom,utf-8,iso-2022-jp,sjis,cp932,euc-jp,cp20932
+" enable the setting of the different filetypes
+filetype on
+" don't make .swp files, backup files
+:set noswapfile
+:set nobackup
+" enable DOXYGEN Comment distinction
+:let g:load_doxygen_syntax=1
+" completion of command line input
+:set wildmenu
+" number of history ; past command
+:set history=1000
+
+" visual
+:set number               " visible line number
+:set ruler                " visible rows&columns number where cursor is
+:syntax enable            " turn on syntax highlighting
+:set hls                  " turn on highlight search
+"let &t_ti.="\e[1 q"       " Cursor shape
+"let &t_SI.="\e[5 q"       " Cursor shape
+"let &t_EI.="\e[1 q"       " Cursor shape
+"let &t_te.="\e[0 q"       " Cursor shape
+:set foldmethod=syntax    " enable folding
+" :set foldmethod=marker
+" :set foldmethod=indent
+":set scrolloff=5          " margin ensure when scroll
+":set listchars=tab:▶\ ,eol:$,trail:␣,extends:»,precedes:«
+:set listchars=tab:▶\ ,trail:␣,extends:»,precedes:«
+:set cursorline
+
+" operation
+:set is                   " turn on incremental search
+:set mouse=a              " enable mouse
+:set whichwrap=b,s,h,l,<,>,[,]
+:set showcmd              " show command on status line
+:set showmode             " show current mode
+" Do not save the IME state when escape insert mode
+inoremap <silent> <Esc> <Esc>
+inoremap <silent> <C-[> <Esc>
+inoremap <silent> <C-j> <C-^>
+" indent discription
+:set bs=2                 " enable <BS> in Insert Mode
+:set ts=4                 " length of TAB
+:set sw=4
+:set expandtab
+:set sts=0
+":set autoindent
+:set smartindent
+:set list

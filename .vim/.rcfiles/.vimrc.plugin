@@ -1,0 +1,31 @@
+" vim plugin
+
+" javascript indent
+" Bundle 'pangloss/vim-javascript'
+
+" ---- neobundle ----
+:set runtimepath+=~/.vim/bundle/neobundle.vim
+
+:call neobundle#begin(expand('~/.vim/bundle/'))
+:NeoBundleFetch 'Shougo/neobundle.vim'
+
+:NeoBundle 'Shougo/neobundle.vim'
+:NeoBundle 'Shougo/unite.vim'
+:NeoBundle 'Shougo/vimfiler'
+:NeoBundle 'scrooloose/nerdtree'
+
+:NeoBundle 'derekwyatt/vim-scala'
+
+:NeoBundle 'open-browser.vim'
+
+:NeoBundle 'plasticboy/vim-markdown'
+:NeoBundle 'kannokanno/previm'
+:NeoBundle 'tyru/open-browser.vim'
+
+au BufRead,BufNewFile *.md set filetype=markdown
+let g:previm_open_cmd = 'cygstart chrome'
+
+:call neobundle#end()
+
+" ---- CtrlP ----
+set runtimepath^=~/.vim/bundle/ctrlp.vim
