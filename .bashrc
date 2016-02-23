@@ -8,7 +8,7 @@
 
 # ~/.bashrc: executed by bash(1) for interactive shells.
 
-export PS1='\[\e[0;31m\]\u@α-world:\[\e[0;33m\]\W\[\e[0;31m\]$\[\e[0m\] '		# t-sato wrote
+export PS1='\[\e[0;31m\]\u@\h:\[\e[0;33m\]\W\[\e[0;31m\]$\[\e[0m\] '		# t-sato wrote
 # The latest version as installed by the Cygwin Setup program can
 # always be found at /etc/defaults/etc/skel/.bashrc
 
