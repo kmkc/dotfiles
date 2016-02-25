@@ -1,8 +1,8 @@
 " Use VIM
-:set nocompatible
+set nocompatible
 
 " plugin
-" source ~/.vim/.rcfiles/.vimrc.plugin
+source ~/.vim/.rcfiles/.vimrc.plugin
 
 " basic settings
 source ~/.vim/.rcfiles/.vimrc.editor
