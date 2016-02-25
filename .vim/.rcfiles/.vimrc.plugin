@@ -24,21 +24,38 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " My Bundles here:
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
-" NeoBundle 'Shougo/neobundle.vim'
+
+"   Memo: Snippet
+if has('lua') && ((v:version == 703 && has('patch885')) || (v:version >= 704))
+    NeoBundle 'Shougo/neocomplete'
+else
+    NeoBundle 'Shougo/neocomplcache'
+endif
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'honza/vim-snippets'
+
+"   Memo: Filer
 " NeoBundle 'Shougo/unite.vim'
-" NeoBundle 'Shougo/vimfiler'
-" NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'scrooloose/nerdtree'
 
-" NeoBundle 'derekwyatt/vim-scala'
+"   Memo: highlighting rule
+NeoBundle 'plasticboy/vim-markdown'
 
-" NeoBundle 'open-browser.vim'
+"   Memo: Toggle comment-uncomment easily.
+NeoBundle 'tomtom/tcomment_vim'
 
-" NeoBundle 'plasticboy/vim-markdown'
-" NeoBundle 'kannokanno/previm'
-" NeoBundle 'tyru/open-browser.vim'
+"   Memo: Files with ANSI escape sequences look good.
+NeoBundle 'vim-scripts/AnsiEsc.vim'
 
-" au BufRead,BufNewFile *.md set filetype=markdown
-" let g:previm_open_cmd = 'cygstart chrome'
+"   Memo: Syntax check
+" NeoBundle 'scrooloose/syntastic'
+
+"   Memo: Browse a class outline.
+NeoBundle 'majutsushi/tagbar'
+
+"   Memo: I love Ctrl-p
+NeoBundle 'kien/ctrlp.vim'
 
 call neobundle#end()
 
@@ -48,6 +65,3 @@ filetype plugin indent on
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
 NeoBundleCheck
-
-" ---- CtrlP ----
-" set runtimepath^=~/.vim/bundle/ctrlp.vim
