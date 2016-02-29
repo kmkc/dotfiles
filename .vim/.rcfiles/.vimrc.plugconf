@@ -6,4 +6,4 @@ let g:ctrlp_working_path_mode = 'c' " current dir
 nnoremap <silent><C-n> :NERDTreeToggle<CR>
 
 " ---- tagbar ----
-nnoremap <silent><Tab> :TagbarToggle<CR>
+nnoremap <silent><S-Tab> :TagbarToggle<CR>
