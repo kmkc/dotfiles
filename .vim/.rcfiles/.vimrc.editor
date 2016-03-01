@@ -1,6 +1,8 @@
+" ------------------------------------------------------------------------------
 " vim editor settings
+" ------------------------------------------------------------------------------
 
-" encoding priolity when reading file
+" encoding priolity
 set fileencodings=ucs-bom,utf-8,iso-2022-jp,sjis,cp932,euc-jp,cp20932
 " enable the setting of the different filetypes
 filetype on
@@ -13,8 +15,15 @@ let g:load_doxygen_syntax=1
 set wildmenu
 " number of history ; past command
 set history=1000
+" enable Yen syntax
+" if &fenc == 'sjis'
+    " (;^;) < Help me! What should I do...
+" endif
+source ~/.vim/.rcfiles/.vimrc.Yen.highlight
 
+" ------------------------------------------------------------------------------
 " visual
+" ------------------------------------------------------------------------------
 set number               " visible line number
 set ruler                " visible rows&columns number where cursor is
 syntax enable            " turn on syntax highlighting
@@ -30,8 +39,15 @@ set foldmethod=syntax    " enable folding
 " set listchars=tab:▶\ ,eol:$,trail:␣,extends:»,precedes:«
 set listchars=tab:▶\ ,trail:␣,extends:»,precedes:«
 set cursorline
+" Status Line view
+set stl=%-n:%-t%-m\ %-r%-h%-w
+set stl+=%{','.(&fenc!=''?&fenc:&enc)}
+" set stl+=%{','.&fileformat.''}
 
+
+" ------------------------------------------------------------------------------
 " operation
+" ------------------------------------------------------------------------------
 set is                   " turn on incremental search
 set mouse=a              " enable mouse
 set whichwrap=b,s,h,l,<,>,[,]

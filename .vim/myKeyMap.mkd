@@ -1,0 +1,6 @@
+# My key-map config
+
+## Plugin
+
+| C-n       | NERTreeToggle     |
+| S-Tab     | TagbarToggle      |
