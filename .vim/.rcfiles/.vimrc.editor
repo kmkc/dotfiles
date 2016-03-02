@@ -1,6 +1,6 @@
-" ------------------------------------------------------------------------------
+" ==============================================================================
 " vim editor settings
-" ------------------------------------------------------------------------------
+" ==============================================================================
 
 " encoding priolity
 set fileencodings=ucs-bom,utf-8,iso-2022-jp,sjis,cp932,euc-jp,cp20932
@@ -25,24 +25,21 @@ source ~/.vim/.rcfiles/.vimrc.Yen.highlight
 " visual
 " ------------------------------------------------------------------------------
 set number               " visible line number
-set ruler                " visible rows&columns number where cursor is
 syntax enable            " turn on syntax highlighting
 set hls                  " turn on highlight search
-" let &t_ti.="\e[1 q"       " Cursor shape
-" let &t_SI.="\e[5 q"       " Cursor shape
-" let &t_EI.="\e[1 q"       " Cursor shape
-" let &t_te.="\e[0 q"       " Cursor shape
+let &t_ti.="\e[1 q"      " Cursor shape
+let &t_SI.="\e[5 q"      " Cursor shape
+let &t_EI.="\e[1 q"      " Cursor shape
+let &t_te.="\e[0 q"      " Cursor shape
+" set cursorline
 set foldmethod=syntax    " enable folding
-" set foldmethod=marker
-" set foldmethod=indent
-" set scrolloff=5          " margin ensure when scroll
-" set listchars=tab:▶\ ,eol:$,trail:␣,extends:»,precedes:«
 set listchars=tab:▶\ ,trail:␣,extends:»,precedes:«
-set cursorline
+
+" set ruler                " visible rows&columns number where cursor is
 " Status Line view
-set stl=%-n:%-t%-m\ %-r%-h%-w
-set stl+=%{','.(&fenc!=''?&fenc:&enc)}
-" set stl+=%{','.&fileformat.''}
+set stl=buf%n\ %t%m\ %r%h%q%w
+set stl+=%{'['.(&fenc!=''?&fenc:&enc).']'}
+set stl+=%=(%l,%c)
 
 
 " ------------------------------------------------------------------------------

@@ -1,0 +1,6 @@
+" CubeSuite+ Project
+" NOTE: Convert "PROJECTFILE" to "./AddProjectPath" yourself.
+if filereadable("./AddProjectPath")
+    source ./AddProjectPath
+endif
+

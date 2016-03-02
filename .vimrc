@@ -13,3 +13,6 @@ source ~/.vim/.rcfiles/.vimrc.color
 
 " filetype
 source ~/.vim/.rcfiles/.vimrc.type
+
+" project settings
+source ~/.vim/.rcfiles/.vimrc.projects
