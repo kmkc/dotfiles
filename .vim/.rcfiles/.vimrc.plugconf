@@ -1,10 +1,23 @@
-" ---- CtrlP ----
+" ------------------------------------------------------------------------------
+" CtrlP
+" ------------------------------------------------------------------------------
+" Required:
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_working_path_mode = '' " current dir
+let g:ctrlp_working_path_mode = ''
 let g:ctrlp_regexp = 1  " RegEx search as the default
 
-" ---- NERDTree ----
+" Ignore file list
+" .cref .mrc .obj   :   CSplus build file
+let g:ctrlp_custom_ignore = {
+  \     'file':   '\.\(cref\|mrc\|obj\)$',
+  \ }
+
+" ------------------------------------------------------------------------------
+" NERDTree
+" ------------------------------------------------------------------------------
 nnoremap <silent><C-n> :NERDTreeToggle<CR>
 
-" ---- tagbar ----
+" ------------------------------------------------------------------------------
+" tagbar
+" ------------------------------------------------------------------------------
 nnoremap <silent><S-Tab> :TagbarToggle<CR>
