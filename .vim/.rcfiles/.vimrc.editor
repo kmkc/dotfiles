@@ -49,6 +49,7 @@ set is                   " turn on incremental search
 set mouse=a              " enable mouse
 set whichwrap=b,s,h,l,<,>,[,]
 set showcmd              " show command on status line
+set laststatus=2         " show status line always
 set showmode             " show current mode
 " indent discription
 set bs=2                 " enable <BS> in Insert Mode
