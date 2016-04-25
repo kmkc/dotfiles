@@ -4,7 +4,7 @@
 " :highlight
 " :so $VIMRUNTIME/syntax/colortest.vim
 " :so $VIMRUNTIME/syntax/hitest.vim
-" $perl /home/t-sato/myscript/256vimcolor.pl
+" $perl 256vimcolor.pl
 
 " Set 256 colors
 set t_Co=256
@@ -30,6 +30,7 @@ hi Visual      ctermfg=white ctermbg=darkblue
 hi Pmenu       ctermbg=darkgray
 hi PmenuSel    ctermbg=lightmagenta ctermfg=black
 hi MatchParen  ctermfg=black
+hi mkdBlockquote    ctermfg=74
 
 " Set Doxygen color
 hi doxygenComment  ctermfg=lightgreen
