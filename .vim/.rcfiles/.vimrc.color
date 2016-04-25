@@ -9,6 +9,9 @@
 " Set 256 colors
 set t_Co=256
 
+" ------------------------------------------------------------------------------
+" General
+" ------------------------------------------------------------------------------
 hi SpecialKey  cterm=none ctermfg=8            " [TAB], etc...
 hi NonText     cterm=bold ctermfg=8            " [EOF], etc...
 hi LineNr      ctermfg=black ctermbg=darkgray  " line number
@@ -30,7 +33,11 @@ hi Visual      ctermfg=white ctermbg=darkblue
 hi Pmenu       ctermbg=darkgray
 hi PmenuSel    ctermbg=lightmagenta ctermfg=black
 hi MatchParen  ctermfg=black
-hi mkdBlockquote    ctermfg=74
+
+" ------------------------------------------------------------------------------
+" Markdown
+" ------------------------------------------------------------------------------
+hi mkdBlockquote        ctermfg=74          " block
 
 " Set Doxygen color
 hi doxygenComment  ctermfg=lightgreen
