@@ -16,3 +16,6 @@ source ~/.vim/.rcfiles/.vimrc.type
 
 " project settings
 source ~/.vim/.rcfiles/.vimrc.projects
+
+" keymapping, custom command
+source ~/.vim/.rcfiles/.vimrc.custom

@@ -8,9 +8,7 @@ let g:ctrlp_regexp = 1  " RegEx search as the default
 
 " Ignore file list
 " .cref .mrc .obj   :   CSplus build file
-let g:ctrlp_custom_ignore = {
-  \     'file':   '\.\(cref\|mrc\|obj\)$',
-  \ }
+let g:ctrlp_custom_ignore = {'file': '\.\(cref\|mrc\|obj\|lst\)$'}
 
 " ------------------------------------------------------------------------------
 " NERDTree
@@ -21,3 +19,21 @@ nnoremap <silent><C-n> :NERDTreeToggle<CR>
 " tagbar
 " ------------------------------------------------------------------------------
 nnoremap <silent><S-Tab> :TagbarToggle<CR>
+
+" ------------------------------------------------------------------------------
+" neosnippet
+" ------------------------------------------------------------------------------
+" key-mappings
+imap <C-l> <Plug>(neosnippet_expand_or_jump)
+" SuperTab like snippets behavior.
+"imap <expr><TAB>
+" \ pumvisible() ? "\<C-n>" :
+" \ neosnippet#expandable_or_jumpable() ?
+" \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+" For conceal markers.
+if has('conceal')
+    set conceallevel=2 concealcursor=niv
+endif

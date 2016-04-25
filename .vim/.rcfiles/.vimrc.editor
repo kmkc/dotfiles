@@ -50,10 +50,6 @@ set mouse=a              " enable mouse
 set whichwrap=b,s,h,l,<,>,[,]
 set showcmd              " show command on status line
 set showmode             " show current mode
-" Do not save the IME state when escape insert mode
-inoremap <silent> <Esc> <Esc>
-inoremap <silent> <C-[> <Esc>
-inoremap <silent> <C-j> <C-^>
 " indent discription
 set bs=2                 " enable <BS> in Insert Mode
 set ts=4                 " length of TAB
