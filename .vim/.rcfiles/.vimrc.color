@@ -39,13 +39,16 @@ hi MatchParen  ctermfg=black
 " ------------------------------------------------------------------------------
 hi mkdBlockquote        ctermfg=74          " block
 
-" Set Doxygen color
+" ------------------------------------------------------------------------------
+" Doxygen
+" ------------------------------------------------------------------------------
 hi doxygenComment  ctermfg=lightgreen
 hi doxygenParam    ctermfg=lightgreen
 hi doxygenSpecial  ctermfg=lightgreen
 
-
-" vimdiff color
+" ------------------------------------------------------------------------------
+" VimDiff
+" ------------------------------------------------------------------------------
 hi DiffAdd    ctermfg=black ctermbg=2
 hi DiffChange ctermfg=black ctermbg=3
 hi DiffDelete ctermfg=black ctermbg=6
