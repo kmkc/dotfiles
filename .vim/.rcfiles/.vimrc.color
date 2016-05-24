@@ -9,47 +9,51 @@
 " Set 256 colors
 set t_Co=256
 
+" ColorScheme
+set background=dark
+colorscheme hybrid
+
 " ------------------------------------------------------------------------------
 " General
 " ------------------------------------------------------------------------------
-hi SpecialKey  cterm=none ctermfg=8            " [TAB], etc...
-hi NonText     cterm=bold ctermfg=8            " [EOF], etc...
-hi LineNr      ctermfg=black ctermbg=darkgray  " line number
-hi Number      ctermfg=3                       " dex and hex intager
-hi Comment     ctermfg=34                      " comment
-hi Type        ctermfg=6                       " void, int, unsigned int, etc...
-hi PreProc     ctermfg=81                      " #include, #define, etc...
-hi Constant    ctermfg=1                       " String enclosed in double quotes
-hi Character   ctermfg=5                       " A caracter
-hi Statement   ctermfg=15                      " for, while, do, etc...
-hi Directory   ctermfg=75
-hi Search      cterm=underline ctermfg=7 ctermbg=4
-hi Folded      cterm=none ctermfg=22 ctermbg=none
-hi FoldColumn  cterm=none ctermfg=22 ctermbg=none
-hi Special     ctermfg=yellow                  " '@param' etc. at dxygen comment
-hi Normal      ctermbg=none ctermfg=250
-hi Underlined  ctermfg=lightblue
-hi Visual      ctermfg=white ctermbg=darkblue
-hi Pmenu       ctermbg=darkgray
-hi PmenuSel    ctermbg=lightmagenta ctermfg=black
-hi MatchParen  ctermfg=black
+"hi SpecialKey  cterm=none ctermfg=8            " [TAB], etc...
+"hi NonText     cterm=bold ctermfg=8            " [EOF], etc...
+"hi LineNr      ctermfg=black ctermbg=darkgray  " line number
+"hi Number      ctermfg=3                       " dex and hex intager
+"hi Comment     ctermfg=34                      " comment
+"hi Type        ctermfg=6                       " void, int, unsigned int, etc...
+"hi PreProc     ctermfg=81                      " #include, #define, etc...
+"hi Constant    ctermfg=1                       " String enclosed in double quotes
+"hi Character   ctermfg=5                       " A caracter
+"hi Statement   ctermfg=15                      " for, while, do, etc...
+"hi Directory   ctermfg=75
+"hi Search      cterm=underline ctermfg=7 ctermbg=4
+"hi Folded      cterm=none ctermfg=22 ctermbg=none
+"hi FoldColumn  cterm=none ctermfg=22 ctermbg=none
+"hi Special     ctermfg=yellow                  " '@param' etc. at dxygen comment
+"hi Normal      ctermbg=none ctermfg=250
+"hi Underlined  ctermfg=lightblue
+"hi Visual      ctermfg=white ctermbg=darkblue
+"hi Pmenu       ctermbg=darkgray
+"hi PmenuSel    ctermbg=lightmagenta ctermfg=black
+"hi MatchParen  ctermfg=black
 
 " ------------------------------------------------------------------------------
 " Markdown
 " ------------------------------------------------------------------------------
-hi mkdBlockquote        ctermfg=74          " block
+"hi mkdBlockquote        ctermfg=74          " block
 
 " ------------------------------------------------------------------------------
 " Doxygen
 " ------------------------------------------------------------------------------
-hi doxygenComment  ctermfg=lightgreen
-hi doxygenParam    ctermfg=lightgreen
-hi doxygenSpecial  ctermfg=lightgreen
+"hi doxygenComment  ctermfg=lightgreen
+"hi doxygenParam    ctermfg=lightgreen
+"hi doxygenSpecial  ctermfg=lightgreen
 
 " ------------------------------------------------------------------------------
 " VimDiff
 " ------------------------------------------------------------------------------
-hi DiffAdd    ctermfg=black ctermbg=2
-hi DiffChange ctermfg=black ctermbg=3
-hi DiffDelete ctermfg=black ctermbg=6
-hi DiffText   ctermfg=black ctermbg=7
+"hi DiffAdd    ctermfg=black ctermbg=2
+"hi DiffChange ctermfg=black ctermbg=3
+"hi DiffDelete ctermfg=black ctermbg=6
+"hi DiffText   ctermfg=black ctermbg=7

@@ -80,9 +80,9 @@ export PS1='\[\e[0;31m\]\u@\h:\[\e[0;33m\]\W\[\e[0;31m\]$\[\e[0m\] '
 # Aliases
 #
 # Some people use a different file for aliases
- if [ -f "${HOME}/.bash_aliases" ]; then
-   source "${HOME}/.bash_aliases"
- fi
+if [ -f "${HOME}/.bash_aliases" ]; then
+  source "${HOME}/.bash_aliases"
+fi
 #
 # Some example alias instructions
 # If these are enabled they will be used instead of any instructions

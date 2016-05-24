@@ -60,6 +60,11 @@ NeoBundle 'kien/ctrlp.vim'
 call neobundle#end()
 
 " Required:
+call neobundle#begin(expand('~/.vim/colors/'))
+NeoBundle 'w0ng/vim-hybrid'
+call neobundle#end()
+
+" Required:
 filetype plugin indent on
 
 " If there are uninstalled bundles found on startup,
