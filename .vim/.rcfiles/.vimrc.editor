@@ -35,6 +35,7 @@ let &t_te.="\e[0 q"      " Cursor shape
 set cursorline
 set foldmethod=syntax    " enable folding
 set listchars=tab:▶\ ,trail:␣,extends:»,precedes:«
+set display=lastline
 
 " set ruler                " visible rows&columns number where cursor is
 " Status Line view
