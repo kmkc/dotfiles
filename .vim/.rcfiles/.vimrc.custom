@@ -9,6 +9,8 @@ inoremap <silent> <Esc> <Esc>
 inoremap <silent> <C-[> <Esc>
 inoremap <silent> <C-j> <C-^>
 nnoremap Y y$
+nnoremap + <C-a>
+nnoremap - <C-x>
 
 " ------------------------------------------------------------------------------
 " Custom command
