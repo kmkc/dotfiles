@@ -1,5 +1,6 @@
 AnsiEsc.vim
 ctrlp.vim
+lightline.vim
 neobundle.vim
 neocomplcache
 neosnippet
@@ -8,6 +9,7 @@ nerdtree
 tagbar
 tcomment_vim
 unite.vim
+vim-fugitive
 vim-hybrid
 vim-markdown
 vim-snippets

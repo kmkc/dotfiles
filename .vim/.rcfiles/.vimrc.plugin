@@ -57,6 +57,12 @@ NeoBundle 'majutsushi/tagbar'
 "   Memo: I love Ctrl-p
 NeoBundle 'kien/ctrlp.vim'
 
+"   Memo: Configure statusline/tabline
+NeoBundle 'itchyny/lightline.vim'
+
+"   Memo: Operation git command without exiting vim
+NeoBundle 'tpope/vim-fugitive'
+
 call neobundle#end()
 
 " Required:
