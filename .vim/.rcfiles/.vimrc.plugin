@@ -63,6 +63,9 @@ NeoBundle 'itchyny/lightline.vim'
 "   Memo: Operation git command without exiting vim
 NeoBundle 'tpope/vim-fugitive'
 
+"   Memo: Multiple highlighting under cursor
+NeoBundle 't9md/vim-quickhl'
+
 call neobundle#end()
 
 " Required:

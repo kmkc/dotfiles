@@ -12,4 +12,5 @@ unite.vim
 vim-fugitive
 vim-hybrid
 vim-markdown
+vim-quickhl
 vim-snippets

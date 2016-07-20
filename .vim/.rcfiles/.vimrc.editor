@@ -42,9 +42,9 @@ set matchtime=1
 
 " set ruler                " visible rows&columns number where cursor is
 " Status Line view
-set stl=buf%n\ %t%m\ %r%h%q%w
-set stl+=%{'['.(&fenc!=''?&fenc:&enc).']'}
-set stl+=%=(%l,%c)
+" set stl=buf%n\ %t%m\ %r%h%q%w
+" set stl+=%{'['.(&fenc!=''?&fenc:&enc).']'}
+" set stl+=%=(%l,%c)
 set ls=2                 " show status line always
 set sc                   " show command on status line
 
