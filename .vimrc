@@ -19,3 +19,7 @@ source ~/.vim/.rcfiles/.vimrc.projects
 
 " keymapping, custom command
 source ~/.vim/.rcfiles/.vimrc.custom
+
+" Other
+source ~/.vim/.rcfiles/.vimrc.other
+
