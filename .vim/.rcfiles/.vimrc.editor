@@ -34,7 +34,7 @@ let &t_EI.="\e[1 q"      " Cursor shape
 let &t_te.="\e[0 q"      " Cursor shape
 set cursorline
 set foldmethod=syntax    " enable folding
-set listchars=tab:▶\ ,trail:␣,extends:»,precedes:«
+set listchars=tab:▶\ ,trail:▓,extends:»,precedes:«
 set display=lastline
 set pumheight=10
 set showmatch
