@@ -69,6 +69,9 @@ NeoBundle 't9md/vim-quickhl'
 "   Memo: Highlighting fish-shell keywords
 NeoBundle 'dag/vim-fish'
 
+"   Memo: Twitter client
+NeoBundle 'TwitVim'
+
 call neobundle#end()
 
 " Required:
