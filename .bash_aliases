@@ -9,11 +9,3 @@ alias vi='vim'
 alias ls='ls -hF --color=tty'                 # classify files in colour
 alias du='du -h'
 alias od='od -tcx1 -Ax'
-
-# For MobaXterm settings
-if type -a busybox >& /dev/null;then
-  alias crond='/bin/crond'
-  alias sed='/bin/sed'
-  alias tar='/bin/tar'
-  alias tree='/bin/tree'
-fi
