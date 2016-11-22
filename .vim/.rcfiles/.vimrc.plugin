@@ -72,6 +72,9 @@ NeoBundle 'dag/vim-fish'
 "   Memo: Twitter client
 NeoBundle 'TwitVim'
 
+"   Memo: Simply split, simply join
+NeoBundle 'AndrewRadev/splitjoin.vim'
+
 call neobundle#end()
 
 " Required:
