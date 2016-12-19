@@ -10,6 +10,9 @@ let g:ctrlp_regexp = 1  " RegEx search as the default
 " .cref .mrc .obj   :   CSplus build file
 let g:ctrlp_custom_ignore = {'file': '\.\(cref\|mrc\|obj\|lst\)$'}
 
+" Show dot files
+let g:ctrlp_dotfiles = 1
+
 " ------------------------------------------------------------------------------
 " NERDTree
 " ------------------------------------------------------------------------------
