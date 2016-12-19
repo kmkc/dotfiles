@@ -66,3 +66,6 @@ set list
 set hidden
 set ignorecase
 set smartcase
+if v:version >= 800
+    set breakindent
+endif
