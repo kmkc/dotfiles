@@ -7,8 +7,12 @@ let g:ctrlp_working_path_mode = ''
 let g:ctrlp_regexp = 1  " RegEx search as the default
 
 " Ignore file list
-" .cref .mrc .obj   :   CSplus build file
-let g:ctrlp_custom_ignore = {'file': '\.\(cref\|mrc\|obj\|lst\)$'}
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(cref|mrc|obj|lst|git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
 
 " Show dot files
 let g:ctrlp_dotfiles = 1
