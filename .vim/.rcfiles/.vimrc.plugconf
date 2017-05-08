@@ -10,7 +10,7 @@ let g:ctrlp_regexp = 1  " RegEx search as the default
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(cref|mrc|obj|lst|git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'file': '\v\.(exe|so|dll|cref|obj|mrc)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
