@@ -81,6 +81,9 @@ NeoBundle 'thinca/vim-quickrun'
 "   Memo: Check syntax
 NeoBundle 'vim-syntastic/syntastic'
 
+"   Memo: Emmet plugin
+NeoBundle 'mattn/emmet-vim'
+
 call neobundle#end()
 
 " Required:
