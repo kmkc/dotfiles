@@ -1,6 +1,3 @@
-" Use VIM
-set nocompatible
-
 " plugin
 source ~/.vim/.rcfiles/.vimrc.plugin
 source ~/.vim/.rcfiles/.vimrc.plugconf
