@@ -28,6 +28,8 @@ if dein#load_state('~/.vim/bundle/')
     call dein#add('thinca/vim-quickrun') " Run sourcecode on Vim
     call dein#add('mattn/emmet-vim') " Emmet plugin
     call dein#add('pangloss/vim-javascript') " javascript indent
+    call dein#add('tpope/vim-fugitive') " Git wrapper
+    call dein#add('gregsexton/gitv') " Git wrapper
 
     call dein#end()
 
