@@ -36,6 +36,7 @@ if dein#load_state('~/.vim/bundle/')
 
     call dein#begin(expand('~/.vim/colors/'))
     call dein#add('w0ng/vim-hybrid')
+    call dein#add('endel/vim-github-colorscheme')
     call dein#end()
 
     call dein#save_state()
