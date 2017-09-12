@@ -30,6 +30,7 @@ if dein#load_state('~/.vim/bundle/')
     call dein#add('pangloss/vim-javascript') " javascript indent
     call dein#add('tpope/vim-fugitive') " Git wrapper
     call dein#add('gregsexton/gitv') " Git wrapper
+    call dein#add('othree/html5.vim')   " HTML5 tag highlight
 
     call dein#end()
 
